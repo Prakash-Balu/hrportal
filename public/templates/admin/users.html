@@ -8,7 +8,7 @@
 		</div>
 
 		<!-- Modal -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" ng-controller="RegisterCtrl">
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -124,7 +124,7 @@
 	<div class="row">
 		<div class="container-row-div col-md-3 col-sm-6" ng-repeat="user in users">
 			<img class="img-responsive img-thumbnail img-position" src="../img/avatar.jpg">
-			<span class="user-name" title="{{user.firstname}}"s>{{user.firstname}}</span>
+			<span class="user-name" title="{{user.firstname}} {{user.lastname}}">{{user.firstname}} {{user.lastname}}</span>
 			<span class="user-email" title="{{user.email}}">{{user.email}}</span>
 		</div>
 	</div>
