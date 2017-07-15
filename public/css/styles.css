@@ -186,37 +186,35 @@ body{
 }
 
 .container-row-div {
-	background-color: lavender;
-	height: 100px;
-    width: 176px;
-	border: 1px solid grey;
-    border-radius: 6px;
-    position: relative;
-	margin-right: 5px;
+  background-color: lavender;
+  height: 100px;
+  width: 176px;
+  border: 1px solid grey;
+  border-radius: 6px;
+  position: relative;
+  margin-right: 5px;
 }
 
 .user-name {
-	float: left;
-    margin-left: 80px;
-    margin-top: 14px;
+  float: left;
+  margin-left: 80px;
+  margin-top: 14px;
 }
 
-
 .user-email {
-	float: left;
-    margin-left: 80px;
-    margin-top: 10px;
-	white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: inline-block;
-    max-width: 50%;
+  float: left;
+  margin-left: 80px;
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 50%;
 }
 
 .img-position {
-	position: absolute;
-    height: 75px;
-    width: 75px;
-	margin-top: 12px;
+  position: absolute;
+  height: 75px;
+  width: 75px;
+  margin-top: 12px;
 }
-
