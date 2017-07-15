@@ -1,0 +1,20 @@
+<div class="register-body-bg">
+	<div class="register-container">
+		<form class="form-register">
+			<h2 class="form-register-heading">Register</h2>
+			<div class="form-group">
+				<input type="text" class="form-control" id="username" name="username" placeholder="Username" ng-model="user.name" required>
+			</div>
+			<div class="form-group">
+				<input type="password" class="form-control" id="password" name="password" placeholder="Password" ng-model="user.password" required>
+			</div>
+			<div class="form-group">
+				<input type="password" class="form-control" id="cpassword" name="password" placeholder="Confirm Password" ng-model="user.cpassword" required>
+			</div>
+			<div class="reg-form-btn-grp">
+				<button class="btn btn-lg btn-primary" type="submit" ng-click="registerUser(user)">Submit</button>
+			</div>
+			<a class="back-login-btn" ui-sref="login">Back to Login</a>			
+		</form>
+	</div>
+</div>
