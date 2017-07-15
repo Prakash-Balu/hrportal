@@ -1,143 +1,134 @@
-<div class="row">
-	<div class="col-lg-3 col-md-6 col-xs-12">
-		<!-- Button trigger modal -->
-		<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  		Add User
-		</button>
-	</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-3 col-md-6 col-xs-12">
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+	  		Add User
+			</button>
+		</div>
 
-	<!-- Modal -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" ng-controller="RegisterCtrl">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title" id="myModalLabel">Add User</h4>
-				</div>
-				<div class="modal-body">
-					<div class="form-group">
-						<label for="firstname" class="control-label">First Name:</label>
-						<input type="text" name="firstname" class="form-control" id="firstname" ng-model="user.firstname">
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" ng-controller="RegisterCtrl">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Add User</h4>
 					</div>
-					<div class="form-group">
-						<label for="lastname" class="control-label">Last Name:</label>
-						<input type="text" name="lastname" class="form-control" id="lastname" ng-model="user.lastname">
-					</div>
-					<div class="form-group">
-						<label for="email" class="control-label">E-Mail:</label>
-						<input type="email" name="username" class="form-control" id="email" ng-model="user.email">
-					</div>
-					<div class="form-group">
-						<label for="emp_id" class="control-label">Emp Id:</label>
-						<input type="text" name="empid" class="form-control" id="emp_id" ng-model="user.emp_id">
-					</div>
-					<div class="form-group">
-						<label for="password" class="control-label">Password:</label>
-						<input type="password" name="password" class="form-control" id="password" ng-model="user.password">
-					</div>
-					<div class="form-group">
-						<label for="cpassword" class="control-label">Confirm Password:</label>
-						<input type="password" name="cpassword" class="form-control" id="cpassword" ng-model="user.cpassword">
-					</div>
-					<label for="gender" class="control-label">Gender:</label>
-					<div class="form-group">
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="firstname" class="control-label">First Name:</label>
+							<input type="text" name="firstname" class="form-control" id="firstname" ng-model="user.firstname">
+						</div>
+						<div class="form-group">
+							<label for="lastname" class="control-label">Last Name:</label>
+							<input type="text" name="lastname" class="form-control" id="lastname" ng-model="user.lastname">
+						</div>
+						<div class="form-group">
+							<label for="email" class="control-label">E-Mail:</label>
+							<input type="email" name="username" class="form-control" id="email" ng-model="user.email">
+						</div>
+						<div class="form-group">
+							<label for="emp_id" class="control-label">Emp Id:</label>
+							<input type="text" name="empid" class="form-control" id="emp_id" ng-model="user.emp_id">
+						</div>
+						<div class="form-group">
+							<label for="password" class="control-label">Password:</label>
+							<input type="password" name="password" class="form-control" id="password" ng-model="user.password">
+						</div>
+						<div class="form-group">
+							<label for="cpassword" class="control-label">Confirm Password:</label>
+							<input type="password" name="cpassword" class="form-control" id="cpassword" ng-model="user.cpassword">
+						</div>
+						<label for="gender" class="control-label">Gender:</label>
+						<div class="form-group">
 
-						<!-- <label class="btn btn-primary active"> -->
-						<input type="radio" name="gender" autocomplete="off" checked ng-model="user.gender" value="male"> Male
-						<!-- </label> -->
-						<!-- <label class="btn btn-primary"> -->
-						<input type="radio" name="gender" autocomplete="off" ng-model="user.gender" value="female"> Female
-						<!-- </label> -->
-						<!-- <label class="btn btn-primary"> -->
-						<input type="radio" name="gender" autocomplete="off" ng-model="user.gender" value="unspecified"> Unspecified
-						<!-- </label> -->
-					</div>
-					<div class="form-group">
-						<label for="dob" class="control-label">Date of Birth:</label>
-						<input type="date" name="dob" class="form-control" id="dob" ng-model="user.dob">
-					</div>
-					<div class="form-group">
-						<label for="blood_group" class="control-label">Blood Group:</label>
-						<input type="text" name="blood_group" class="form-control" id="blood_group" ng-model="user.bloodgroup">
-					</div>
-					<div class="form-group">
-						<label for="marital_status" class="control-label">Marital Status:</label>
-						<select class="form-control" id="marital_status" name="marital_status" ng-model="user.maritalstatus">
-					    <option value="single">Single</option>
-					    <option value="married">Married</option>
-					    <option value="divorced">Divorced</option>
-					  </select>
-					</div>
+							<!-- <label class="btn btn-primary active"> -->
+							<input type="radio" name="gender" autocomplete="off" checked ng-model="user.gender" value="male"> Male
+							<!-- </label> -->
+							<!-- <label class="btn btn-primary"> -->
+							<input type="radio" name="gender" autocomplete="off" ng-model="user.gender" value="female"> Female
+							<!-- </label> -->
+							<!-- <label class="btn btn-primary"> -->
+							<input type="radio" name="gender" autocomplete="off" ng-model="user.gender" value="unspecified"> Unspecified
+							<!-- </label> -->
+						</div>
+						<div class="form-group">
+							<label for="dob" class="control-label">Date of Birth:</label>
+							<input type="date" name="dob" class="form-control" id="dob" ng-model="user.dob">
+						</div>
+						<div class="form-group">
+							<label for="blood_group" class="control-label">Blood Group:</label>
+							<input type="text" name="blood_group" class="form-control" id="blood_group" ng-model="user.bloodgroup">
+						</div>
+						<div class="form-group">
+							<label for="marital_status" class="control-label">Marital Status:</label>
+							<select class="form-control" id="marital_status" name="marital_status" ng-model="user.maritalstatus">
+						    <option value="single">Single</option>
+						    <option value="married">Married</option>
+						    <option value="divorced">Divorced</option>
+						  </select>
+						</div>
 
-					<label class="control-label">Present Address:</label>
-					<div class="form-group">
-						<label for="praddr1" class="control-label">Address1:</label>
-						<input type="text" name="praddr1" class="form-control" id="praddr1" ng-model="user.present.addr1">
-						<label for="praddr2" class="control-label">Address2:</label>
-						<input type="text" name="praddr2" class="form-control" id="praddr2" ng-model="user.present.addr2">
-						<label for="prcity">City:</label>
-						<input type="text" name="prcity" class="form-control" id="prcity" ng-model="user.present.city">
-						<label for="prstate">State:</label>
-						<input type="text" name="prstate" class="form-control" id="prstate" ng-model="user.present.state">
-						<label for="prpincode">Pincode:</label>
-						<input type="text" name="prpincode" class="form-control" id="prpincode" ng-model="user.present.pincode">
-					</div>
-					<label class="control-label">Permanent Address:</label>
-					<div class="form-group">
-						<label for="peaddr1" class="control-label">Address1:</label>
-						<input type="text" name="peaddr1" class="form-control" id="peaddr1" ng-model="user.permanent.addr1">
-						<label for="peaddr2" class="control-label">Address2:</label>
-						<input type="text" name="peaddr2" class="form-control" id="peaddr2" ng-model="user.permanent.addr2">
-						<label for="pecity">City:</label>
-						<input type="text" name="pecity" class="form-control" id="pecity" ng-model="user.permanent.city">
-						<label for="pestate">State:</label>
-						<input type="text" name="pestate" class="form-control" id="pestate" ng-model="user.permanent.state">
-						<label for="pepincode">Pincode:</label>
-						<input type="text" name="pepincode" class="form-control" id="pepincode" ng-model="user.permanent.pincode">
-					</div>
-					<div class="form-group">
-						<label for="aadhar" class="control-label">Aadhar:</label>
-						<input type="text" name="aadhar" class="form-control" id="aadhar" ng-model="user.aadhar">
-					</div>
-					<div class="form-group">
-						<label for="panno" class="control-label">PAN Number:</label>
-						<input type="text" name="panno" class="form-control" id="panno" ng-model="user.panno">
-					</div>
-					<div class="form-group">
-						<label for="mobile" class="control-label">Mobile Number:</label>
-						<input type="text" name="mobile" class="form-control" id="mobile" ng-model="user.mobile">
-					</div>
-					<div class="form-group">
-						<label for="phone" class="control-label">Phone Number:</label>
-						<input type="text" name="phone" class="form-control" id="phone" ng-model="user.phone">
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary" ng-click="registerUser(user)">Save changes</button>
+						<label class="control-label">Present Address:</label>
+						<div class="form-group">
+							<label for="praddr1" class="control-label">Address1:</label>
+							<input type="text" name="praddr1" class="form-control" id="praddr1" ng-model="user.present.addr1">
+							<label for="praddr2" class="control-label">Address2:</label>
+							<input type="text" name="praddr2" class="form-control" id="praddr2" ng-model="user.present.addr2">
+							<label for="prcity">City:</label>
+							<input type="text" name="prcity" class="form-control" id="prcity" ng-model="user.present.city">
+							<label for="prstate">State:</label>
+							<input type="text" name="prstate" class="form-control" id="prstate" ng-model="user.present.state">
+							<label for="prpincode">Pincode:</label>
+							<input type="text" name="prpincode" class="form-control" id="prpincode" ng-model="user.present.pincode">
+						</div>
+						<label class="control-label">Permanent Address:</label>
+						<div class="form-group">
+							<label for="peaddr1" class="control-label">Address1:</label>
+							<input type="text" name="peaddr1" class="form-control" id="peaddr1" ng-model="user.permanent.addr1">
+							<label for="peaddr2" class="control-label">Address2:</label>
+							<input type="text" name="peaddr2" class="form-control" id="peaddr2" ng-model="user.permanent.addr2">
+							<label for="pecity">City:</label>
+							<input type="text" name="pecity" class="form-control" id="pecity" ng-model="user.permanent.city">
+							<label for="pestate">State:</label>
+							<input type="text" name="pestate" class="form-control" id="pestate" ng-model="user.permanent.state">
+							<label for="pepincode">Pincode:</label>
+							<input type="text" name="pepincode" class="form-control" id="pepincode" ng-model="user.permanent.pincode">
+						</div>
+						<div class="form-group">
+							<label for="aadhar" class="control-label">Aadhar:</label>
+							<input type="text" name="aadhar" class="form-control" id="aadhar" ng-model="user.aadhar">
+						</div>
+						<div class="form-group">
+							<label for="panno" class="control-label">PAN Number:</label>
+							<input type="text" name="panno" class="form-control" id="panno" ng-model="user.panno">
+						</div>
+						<div class="form-group">
+							<label for="mobile" class="control-label">Mobile Number:</label>
+							<input type="text" name="mobile" class="form-control" id="mobile" ng-model="user.mobile">
+						</div>
+						<div class="form-group">
+							<label for="phone" class="control-label">Phone Number:</label>
+							<input type="text" name="phone" class="form-control" id="phone" ng-model="user.phone">
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary" ng-click="registerUser(user)">Save changes</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<div class="row">
-	<div class="col-lg-3 col-md-6 col-xs-12" ng-repeat="user in users">
-		<rd-widget>
-			<rd-widget-body>
-				<div class="widget-icon green pull-left">
-					<i class="fa fa-users"></i>
-				</div>
-				<div class="title">{{user.emp_id}}</div>
-				<div class="comment" data-toggle="tooltip" title="{{user.firstname}}" style="font-size:18px; font-weight:bold; white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: inline-block;
-    max-width: 50%;">{{user.firstname}}</div>
-			</rd-widget-body>
-		</rd-widget>
+	<div class="row">
+		<div class="container-row-div col-md-3 col-sm-6" ng-repeat="user in users">
+			<img class="img-responsive img-thumbnail img-position" src="../img/avatar.jpg">
+			<span class="user-name" title="{{user.firstname}}"s>{{user.firstname}}</span>
+			<span class="user-email" title="{{user.email}}">{{user.email}}</span>
+		</div>
 	</div>
 </div>
-
 <script>
 	$('#myModal').on('shown.bs.modal', function() {
 		$('#myInput').focus()

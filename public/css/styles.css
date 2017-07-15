@@ -199,6 +199,11 @@ body{
   float: left;
   margin-left: 80px;
   margin-top: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 50%;
 }
 
 .user-email {
